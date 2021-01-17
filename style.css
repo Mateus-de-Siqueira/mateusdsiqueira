@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border: none;
+}
+
+body {
+  background-color: #3B3B3B;
+}
+
+header {
+  width: auto;
+  height: 80px;
+  padding: 15px;
+}
+
+header .logo {
+  width: 50px;
+  height: 50px;
+}
+
+header .menu {
+  float: right;
+  padding: 8px;
+}
+
+#menu {
+  display: none;
+}
+
+h1 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 28pt;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin-top: 250px;
+}
+
+#home p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18pt;
+  color: #fff;
+  margin: 25px 25px 300px 25px;
+  text-align: center;
+}
+
+#home button {
+  width: 200px;
+  height: 50px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #fff;
+  background-color: #C40000;
+  text-align: center;
+  display: block;
+  margin: 0 auto 50px auto;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0);
+
+}
+
+#quemsou h2 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 18pt;
+  color: #fff;
+  margin: 50px 25px;
+  text-transform: uppercase;
+  color: #C40000
+}
+
+#quemsou .perfil {
+  display: block;
+  margin: 50px auto;
+}
+
+#quemsou p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: #fff;
+  margin: 25px;
+  text-align: left;
+}
+
+#quemsou h3 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 18pt;
+  color: #fff;
+  margin: 50px 25px;
+  color: #fff;
+  text-align: center;
+}
+
+#quemsou .habilidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quemsou .habilidades .circle1 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+#quemsou .habilidades .circle1 img {
+  width: 100px;
+  height: 100px;
+  padding: 26px;
+  margin: 0;
+}
+
+#quemsou .habilidades .circle2 {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 100%;
+  margin: 25px;
+}
+
+#quemsou .habilidades .circle2 img {
+  width: 150px;
+  height: 150px;
+  padding: 26px;
+  margin: 0;
+}
+
+#quemsou .habilidades .circle3 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+#quemsou .habilidades .circle3 img {
+  width: 100px;
+  height: 100px;
+  padding: 26px;
+  margin: 0;
+}
+
+#quemsou .card {
+  display: block;
+  width: 85%;
+  height: 400px;
+  margin: 25px auto;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0);
+
+}
+
+#quemsou .card .card-body {
+  display: flex;
+  align-items: center;
+}
+
+#quemsou .card .card-body img {
+  width: auto;
+  height: 50px;
+  margin-right: 25px
+}
+
+#quemsou .card h4 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14pt;
+  color: #fff;
+  padding: 25px;
+  color: #fff;
+  text-align: center;
+}
