@@ -6,6 +6,7 @@
   margin: 0;
   list-style-type: none;
   border: none;
+  direction: none;
 }
 
 body {
@@ -38,14 +39,23 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: #fff;
-  margin-top: 250px;
+  padding-top: 250px;
+}
+
+h2 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 18pt;
+  color: #fff;
+  padding: 25px;
+  text-transform: uppercase;
+  color: #C40000
 }
 
 #home p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18pt;
   color: #fff;
-  margin: 25px 25px 300px 25px;
+  padding: 25px 25px 250px 25px;
   text-align: center;
 }
 
@@ -59,31 +69,22 @@ h1 {
   background-color: #C40000;
   text-align: center;
   display: block;
-  margin: 0 auto 50px auto;
+  margin: 50px auto;
   border-radius: 50px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0);
 
 }
 
-#quemsou h2 {
-  font-family: 'Maven Pro', sans-serif;
-  font-size: 18pt;
-  color: #fff;
-  margin: 50px 25px;
-  text-transform: uppercase;
-  color: #C40000
-}
-
 #quemsou .perfil {
   display: block;
-  margin: 50px auto;
+  margin: 25px auto;
 }
 
 #quemsou p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14pt;
   color: #fff;
-  margin: 25px;
+  padding: 25px;
   text-align: left;
 }
 
@@ -91,7 +92,7 @@ h1 {
   font-family: 'Maven Pro', sans-serif;
   font-size: 18pt;
   color: #fff;
-  margin: 50px 25px;
+  padding: 25px;
   color: #fff;
   text-align: center;
 }
@@ -112,7 +113,7 @@ h1 {
 #quemsou .habilidades .circle1 img {
   width: 100px;
   height: 100px;
-  padding: 26px;
+  padding: 25px;
   margin: 0;
 }
 
@@ -127,7 +128,7 @@ h1 {
 #quemsou .habilidades .circle2 img {
   width: 150px;
   height: 150px;
-  padding: 26px;
+  padding: 25px;
   margin: 0;
 }
 
@@ -141,7 +142,7 @@ h1 {
 #quemsou .habilidades .circle3 img {
   width: 100px;
   height: 100px;
-  padding: 26px;
+  padding: 25px;
   margin: 0;
 }
 
@@ -173,4 +174,242 @@ h1 {
   padding: 25px;
   color: #fff;
   text-align: center;
+}
+
+#oquefaco h3 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14pt;
+  font-weight: lighter;
+  color: #fff;
+  padding: 25px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#oquefaco img {
+  display: block;
+  margin: auto;
+}
+
+#oquefaco p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: #fff;
+  padding: 25px;
+  text-align: left;
+}
+
+#oquefaco .linha {
+  width: 85%;
+  height: 2px;
+  background-color: #C40000;
+  margin: auto;
+}
+
+#portfolio .dropbtn {
+  display: block;
+  width: 100%;
+  height: 80px;
+  background-color: #C40000;
+  margin: auto;
+  text-align: left;
+  padding: 25px;
+  font-size: 14pt;
+  color: #FFF;
+}
+
+#portfolio .dropdown-content {
+  display: none;
+}
+
+#portfolio .container-portfolio {
+  height: 500px;
+  background-color: #878787;
+}
+
+#portfolio .container-portfolio p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: #fff;
+  padding: 25px;
+  text-align: left;
+}
+
+#contato {
+  background-color: #1A1A1A;
+}
+
+#contato p {
+  color: #fff;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: #fff;
+  padding: 25px;
+}
+
+#contato #whatsapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1A1A1A;
+  margin: 50px auto;
+  border-radius: 50px;
+  border: 2px solid #4CAF50;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0);
+}
+
+#contato #whatsapp img {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+#contato #telegram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1A1A1A;
+  margin: 50px auto;
+  border-radius: 50px;
+  border: 2px solid #7AA5DA;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0);
+}
+
+
+
+#contato #telegram img {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+#contato form fieldset {
+  padding: 25px;
+}
+
+#contato form fieldset label {
+  color: #fff;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: #fff;
+  padding: 10px;
+}
+
+#contato form fieldset input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 50px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12pt;
+  color: #878787
+}
+
+#contato form fieldset textarea {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 50px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12pt;
+  color: #878787
+}
+
+#contato form #enviar {
+  width: 200px;
+  height: 50px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #fff;
+  background-color: #C40000;
+  text-align: center;
+  display: block;
+  margin: 50px auto;
+  border-radius: 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0);
+}
+
+#contato .footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+#contato .footer-container #menu-footer h3 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14pt;
+  font-weight: lighter;
+  color: #fff;
+  padding: 15px;
+  text-transform: uppercase;
+  color: #C40000
+}
+
+#contato .footer-container #redesocial h3 {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14pt;
+  font-weight: lighter;
+  color: #fff;
+  padding: 15px;
+  text-transform: uppercase;
+  color: #C40000
+}
+
+#contato .footer-container #menu-footer ul li {
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #878787;
+  padding: 15px;
+}
+
+#contato .footer-container #redesocial ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: #878787;
+  padding: 15px;
+}
+
+#contato .footer-container #redesocial ul li img {
+  margin: 10px
+}
+
+#contato #nota-contato li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 14pt;
+  font-weight: lighter;
+  color: #fff;
+  padding: 15px;
+  color: #fff;
+}
+
+#contato #nota-contato li img {
+  margin: 15px;
 }
