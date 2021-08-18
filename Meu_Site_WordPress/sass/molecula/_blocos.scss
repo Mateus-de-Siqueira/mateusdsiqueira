@@ -1,0 +1,107 @@
+@include breakpoint($tablet) {
+  content: 'tablet';
+  .rodape {
+  display: block !important;
+  }
+}
+
+@include breakpoint($celular) {
+  content: 'celular';
+  .rodape {
+  display: block !important;
+  }
+}
+.rodape {
+  background-color: $cinza_claro;
+  @include flexbox;
+  @include align-items (center);
+  @include justify-content (center);
+
+  .nav_footer {
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        background-color: $verde_floor;
+        box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        font-family: 'Francois One', sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        color: $preto;
+        padding: 10px 20px 10px 20px;
+        margin: 15px auto 15px auto;
+        text-transform: lowercase;
+      }
+    }
+  }
+
+  [class^="bloco"]{
+    height: 300px;
+    background-color: $cinza_claro;
+    text-align: center;
+
+    &.bloco_1 {
+      @include breakpoint($tablet) {
+        content: 'tablet';
+          width: 400px;
+      }
+
+      @include breakpoint($celular) {
+        content: 'tablet';
+          width: 300px;
+      }
+      order: 1;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &.bloco_2 {
+      @include breakpoint($tablet) {
+        content: 'tablet';
+          order: 2;
+          height: 300px;
+          width: 400px;
+      }
+
+      @include breakpoint($celular) {
+        content: 'tablet';
+          order: 2;
+          height: 300px;
+          width: 300px;
+      }
+      order: 3;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &.bloco_3 {
+      @include breakpoint($tablet) {
+        content: 'tablet';
+          order: 3;
+          height: 300px;
+          width: 400px;
+          border-style: none;
+      }
+
+      @include breakpoint($celular) {
+        content: 'tablet';
+          order: 3;
+          height: 300px;
+          width: 300px;
+          border-style: none;
+      }
+
+      order: 2;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+  }
+}

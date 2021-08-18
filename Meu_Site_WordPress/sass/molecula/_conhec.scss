@@ -1,0 +1,31 @@
+.conhec {
+    ul {
+      @include breakpoint($celular) {
+        content: 'celular';
+        display: block !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @include flexbox;
+      @include align-items(center);
+      @include justify-content (space-around);
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    [class^="simb"] {
+      @include breakpoint($pc) {
+        content: 'pc';
+        &:hover {
+          color: $branco;
+        }
+      }
+
+      text-align: center;
+      padding: 15px;
+      font-size: 100px;
+      color: $preto;
+    }
+}

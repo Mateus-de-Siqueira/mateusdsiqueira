@@ -1,0 +1,38 @@
+.menu {
+  @include breakpoint($tablet) {
+    content: 'tablet';
+        display: none;
+  }
+  @include breakpoint($celular) {
+    content: 'celular';
+        display: none;
+  }
+
+  float: right;
+  margin-top: 5px;
+  ul {
+    li {
+      display: inline-block;
+      font-family: 'Francois One', sans-serif;
+      font-size: 24px;
+      text-decoration: none;
+      color: $preto;
+      margin: 15px;
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+      &:after {
+        content: " ";
+        display: table;
+        width: 0%;
+        height: 4px;
+        @include linear-gradient(90deg, $verde_floor, $azul);
+        border-radius: 20px;
+        transition: .4s;
+      }
+
+    }
+  }
+}

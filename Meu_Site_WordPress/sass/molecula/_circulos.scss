@@ -1,0 +1,72 @@
+.circulos {
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content (space-around);
+
+  .perfil {
+    order: 4;
+    img {
+      @include breakpoint($tablet) {
+        content: 'tablet';
+        width: 200px;
+      }
+      @include breakpoint($celular) {
+        content: 'celular';
+        width: 200px;
+      }
+      
+      width: 350px;
+      border-radius: 100%;
+    }
+  }
+
+  @include breakpoint($tablet) {
+    content: 'tablet';
+    [class^="circulo"]{
+      display: none;
+    }
+  }
+
+  @include breakpoint($celular) {
+    content: 'celular';
+    [class^="circulo"]{
+      display: none;
+    }
+  }
+
+  [class^="circulo"]{
+    border-radius: 100%;
+    background-color: $preto;
+
+    &.circulo_1{
+      order: 1;
+      width: 50px;
+      height: 50px;
+    }
+    &.circulo_2{
+      order: 2;
+      width: 100px;
+      height: 100px;
+    }
+    &.circulo_3{
+      order: 3;
+      width: 150px;
+      height: 150px;
+    }
+    &.circulo_5{
+      order: 5;
+      width: 150px;
+      height: 150px;
+    }
+    &.circulo_6{
+      order: 6;
+      width: 100px;
+      height: 100px;
+    }
+    &.circulo_7{
+      order: 7;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}

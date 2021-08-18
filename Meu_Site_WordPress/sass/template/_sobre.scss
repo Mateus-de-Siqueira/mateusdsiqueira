@@ -1,0 +1,15 @@
+.sobre {
+  min-height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../../img/mao_edit.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: $cinza;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @import '../molecula/circulos';
+  @import '../molecula/conhec';
+}

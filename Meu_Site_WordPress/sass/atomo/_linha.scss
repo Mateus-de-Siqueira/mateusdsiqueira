@@ -1,0 +1,6 @@
+.linha {
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @include linear-gradient(90deg, $verde_floor, $azul);
+}

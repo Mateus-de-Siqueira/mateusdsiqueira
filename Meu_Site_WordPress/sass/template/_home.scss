@@ -1,0 +1,8 @@
+@import '../organismo/header';
+.home {
+  height: 600px;
+  background-color: $cinza;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  @import '../molecula/logo_center';
+}

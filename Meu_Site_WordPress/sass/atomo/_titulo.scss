@@ -1,0 +1,16 @@
+.titulo {
+  font-family: 'Francois One', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 40px auto 40px auto;
+}
+
+.titulo_preto {
+  @extend .titulo;
+  color: $preto;
+}
+
+.titulo_branco {
+  @extend .titulo;
+  color: $branco;
+}

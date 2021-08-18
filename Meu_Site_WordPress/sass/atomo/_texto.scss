@@ -1,0 +1,24 @@
+.texto {
+  font-family: 'Francois One', sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.texto_center {
+  @extend .texto;
+  text-align: center;
+}
+
+.texto_justify {
+  @extend .texto;
+  text-align: justify;
+}
+
+.texto_preto {
+  color: $preto;
+}
+
+.texto_branco{
+  color: $branco;
+}

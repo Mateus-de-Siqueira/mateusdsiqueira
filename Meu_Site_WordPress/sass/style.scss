@@ -1,0 +1,24 @@
+//font
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+//bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+//breakpoint
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint';
+//flexbox-mixin
+@import '../node_modules/sass-flex-mixin/flex';
+//atomos
+@import 'sass/atomo/variaveis';
+@import 'sass/atomo/titulo';
+@import 'sass/atomo/texto';
+@import 'sass/atomo/icone';
+//mixins
+@import 'sass/molecula/mixins';
+@import 'sass/atomo/linha';
+//templates
+@import 'sass/organismo/menu_responsivel';
+@import 'sass/template/home';
+@import 'sass/template/portfolio';
+@import 'sass/template/sobre';
+@import 'sass/template/contatos';

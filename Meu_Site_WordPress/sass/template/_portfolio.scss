@@ -1,0 +1,8 @@
+.portfolio {
+  background-color: $cinza_claro;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  .container {
+  @import '../organismo/galeria'
+  }
+}

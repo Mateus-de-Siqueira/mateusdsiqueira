@@ -1,0 +1,60 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  background-color: $preto;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: 'Francois One', sans-serif;
+  font-size: 25px;
+  color: $branco;
+  display: block;
+  transition: 0.3s;
+  text-decoration: none;
+  &:hover {
+    color: $branco;
+    text-decoration: none;
+  }
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.menu_responsivo {
+  @include breakpoint($tablet) {
+    content: 'tablet';
+    display: block;
+  }
+  @include breakpoint($celular) {
+    content: 'celular';
+    display: block;
+  }
+  display: none;
+  float: right;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  text-align: center;
+  opacity: 80%;
+  color: $preto;
+  cursor:pointer;
+}

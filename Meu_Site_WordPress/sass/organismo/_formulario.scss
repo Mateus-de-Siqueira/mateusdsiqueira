@@ -1,0 +1,39 @@
+form {
+@include clearfix;
+@include make-col(8);
+@include make-col-offset(2);
+
+  input, select, textarea {
+    @include breakpoint($pc) {
+      content: 'pc';
+      &:hover {
+        border-color: $verde_floor;
+      }
+      &:focus {
+        border-color:$azul;
+      }
+    }
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 2px solid $cinza;
+    @include transition(.4s);
+  }
+
+  button {
+    float: right;
+    background-color: $verde_floor;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: right;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    font-family: 'Francois One', sans-serif;
+    text-transform: uppercase;
+  }
+}
