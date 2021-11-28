@@ -52,6 +52,10 @@ h2 {
   color: #C40000
 }
 
+#home {
+  height: 100vh;
+}
+
 #home p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18pt;
@@ -81,6 +85,11 @@ h2 {
   box-shadow: 0px 0px 20px rgba(0, 0, 0);
 
 }
+
+#quemsou {
+  width: 100%;
+  height: auto;
+} 
 
 #quemsou .perfil {
   display: block;
