@@ -16,16 +16,17 @@
 <body>
   <header id="inicio">
     <img class="logo" src="assets/minimal_logo.svg" alt="logo_mateusdsiqueira">
-    <img class="menu" src="assets/menu.svg" alt="menu">
-    <nav id="menu">
-      <ul>
-        <li>Home</li>
-        <li>Quem sou</li>
-        <li>O que faço</li>
-        <li>Portólio</li>
-        <li>Contato</li>
-      </ul>
+    <nav id="menu" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#home">Home</a>
+      <a href="#quemsou">Quem sou</a>
+      <a href="#oquefaco">O que faço</a>
+      <a href="#portfolio">Portólio</a>
+      <a href="#contato">Contato</a>
     </nav>
+    <!-- <img class="menu" src="assets/menu.svg" alt="menu"> -->
+    <span style="font-size:40px;cursor:pointer;float:right;" onclick="openNav()">&#9776;</span>
+
   </header>
   <div class="div-cotainer">
     <article>
@@ -182,6 +183,15 @@
       </ul>
     </footer>
   </div>
+  <script>
+    function openNav() {
+      document.getElementById("menu").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("menu").style.width = "0";
+    }
+  </script>
 </body>
 
 </html>
