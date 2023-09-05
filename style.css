@@ -14,8 +14,8 @@
   --vermelho1: #660000;
   --vermelho2: #800606;
   --vermelho3: #990F0F;
-  --vermelho4: #B21B1B;
-  --principal: #CC2929;
+  --principal: #B21B1B;
+  --vermelho4: #CC2929;
   --vermelho5: #D94141;
   --vermelho6: #E55C5C;
   --vermelho7: #F27979;
@@ -108,6 +108,7 @@ h1 {
   font-weight: bold;
   text-align: center;
   color: var(--preto);
+  display: none;
 }
 
 h2 {
@@ -119,40 +120,73 @@ h2 {
   color: var(--principal)
 }
 
+.textopreto {
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 18pt;
+  color: var(--preto);
+  padding: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
 #home {
   height: 100vh;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column; */
   background-color: var(--cinza7);
   border-radius: 0 0 50px 50px;
+}
+
+#block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80%;
+  /* flex-direction: column; */
 }
 
 #home p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18pt;
   color:var(--preto);
-  padding: 25px;
-  text-align: center;
+  padding: 15px 0;
+  text-align: left;
 }
-
+/* 
 #home img {
   display: block;
   width: 80%;
   margin: 25px auto;
+} */
+
+#home #perfil {
+  display: block;
+  width: 400px;
+  margin: 25px auto;
+  border-radius: 90%;
+}
+
+#home #name {
+  display: block;
+  width: 40vw;
+  margin: 0 auto;
 }
 
 #home button {
   width: 200px;
-  height: 50px;
+  height: 40px;
   font-family: 'Maven Pro', sans-serif;
   font-size: 14pt;
   font-weight: bold;
   color:var(--branco);
   background: var(--principal);  /* fallback for old browsers */
-  background: -webkit-linear-gradient(180deg, #CC2929 0%, #E55C5C 100%);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(180deg, #CC2929 0%, #E55C5C 100%);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(180deg, #E55C5C 0%, #CC2929 100%);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(180deg, #E55C5C 0%, #CC2929 100%);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   display: block;
   margin: 50px auto;
@@ -335,10 +369,10 @@ h2 {
 }
 
 #oquefaco .linha {
-  width: 85%;
+  width: 90%;
   height: 2px;
   background-color: var(--principal);
-  margin: auto;
+  margin: 25px auto;
 }
 
 #portfolio .dropbtn {
@@ -547,4 +581,44 @@ h2 {
 
 #contato #nota-contato li img {
   margin: 15px;
+}
+
+.duas-colunas {
+  display: flex;
+}
+
+.apresentacao {
+  display: flex;
+}
+
+.coluna {
+  width: 50%;
+}
+
+.colunamargem {
+  width: 50%;
+  margin: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .duas-colunas {
+    display: block;
+  } 
+
+  .apresentacao {
+    display: block;
+  }
+
+  .coluna {
+    width: 100%;
+  }
+
+  .colunamargem {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .textopreto {
+    text-align: center;
+  }
 }
