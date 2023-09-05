@@ -176,7 +176,7 @@ h2 {
 }
 
 #home #name {
-  display: block;
+  /* display: block; */
   width: 40vw;
   margin: 0 auto;
 }
