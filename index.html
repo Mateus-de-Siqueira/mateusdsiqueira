@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,47 +16,62 @@
 
 <body>
   <header id="inicio">
-    <img class="logo" src="assets/img/minimal_logo.svg" alt="logo_mateusdsiqueira">
-    <img class="menu" src="assets/img/menu.png" alt="menu">
-    <nav id="menu">
-      <ul>
-        <li>Home</li>
-        <li>Quem sou</li>
-        <li>O que faço</li>
-        <li>Portólio</li>
-        <li>Contato</li>
-      </ul>
+    <img class="logo" src="assets/img/Icon.svg" alt="logo_mateusdsiqueira">
+    <nav id="menu" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#home">Home</a>
+      <a href="#quemsou">Quem sou</a>
+      <a href="#oquefaco">O que faço</a>
+      <a href="#portfolio">Portólio</a>
+      <a href="#contato">Contato</a>
     </nav>
+    <!-- <img class="menu" src="assets/img/menu.svg" alt="menu"> -->
+    <!-- <span style="font-size:40px;cursor:pointer;float:right;" onclick="openNav()"></span> -->
+
   </header>
   <div class="div-cotainer">
     <article>
       <section id="home">
-        <h1>Mateus de Siqueira</h1>
-        <p></p>
-        <a href="#contato">
-          <button type="button" name="button">Entre em Contato</button>
-        </a>
+        <div id="block">
+          <div>
+            <img id="name" src="/assets/img/name.svg" alt="">
+            <h1>SIQUEIRA DEV</h1>
+            <h2 class="textopreto">Dev</h2>
+            <p>Se queira ou se não queira, é Siqueira.</p>
+            <a href="https://api.whatsapp.com/send?phone=5561998747470&text=Quero%20fazer%20um%20or%C3%A7amento.">
+              <button type="button" name="button">CONTATO</button>
+            </a>
+          </div>
+          <!-- <div>
+            <img id="perfil" class="perfil" src="assets/img/perfil.png" alt="mateusdesiqueira">
+          </div> -->
+        </div>
+      
       </section>
       <section id="quemsou">
         <h2>Quem sou</h2>
-        <img class="perfil" src="assets/img/perfil.png" alt="mateusdesiqueira">
-        <span>Olá,</span>
-        <p>Menu nome é Mateus de Siqueira Silva sou webdesign e desenvolvedor frontend. Tenho formação em Técnico em
-          Informática e
-          atualmente estou graduando Engenharia de Software na Universidade de Brasília.</p>
-        <h3>Habilidades em:</h3>
-        <div class="habilidades">
-          <div class="circle1">
-            <!-- <img src="assets/img/figma.svg" alt="figma"> -->
+        <div class="apresentacao">
+          <div class="coluna">
+            <span>Olá,</span>
+            <p>Meu nome é Mateus de Siqueira, sou desenvolvedor web e de aplicativos. Também possuo conhecimentos em design e web design e me aventuro em áreas de Interfaces do Usuário e Experiência do Usuário.</p>
           </div>
-          <div class="circle2">
-            <!-- <img src="assets/img/html.svg" alt="html "> -->
-          </div>
-          <div class="circle3">
-            <!-- <img src="assets/img/css.svg" alt="css"> -->
+          <div class="coluna">
+            <h3>Habilidades em:</h3>
+            <div class="habilidades">
+              <div class="circle1">
+                <img src="assets/img/figma.svg" alt="figma">
+              </div>
+              <div class="circle2">
+                <img src="assets/img/html.svg" alt="html ">
+              </div>
+              <div class="circle3">
+                <img src="assets/img/css.svg" alt="css">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card">
+       
+        <!-- <div class="card">
           <h4>Diferenciais</h4>
           <h5>Cógigo Limpo</h5>
           <div class="card-body">
@@ -63,22 +79,56 @@
               ter problemas. </p>
             <img src="assets/img/code.png" alt="code">
           </div>
-        </div>
+        </div> -->
       </section>
       <section id="oquefaco">
         <h2>O que faço</h2>
-        <h3>Web Design</h3>
-        <img src="assets/img/website.png" alt="website">
-        <p>Sou webdesign, tenho responsabilidade em criar o layout e organizar as páginas, selecionar tipografias e
-          cores. Além dissou sou entusiasta na área de UI(Iterface do Usurário), procurando sempre melhorar a
-          experiencia do usuário. </p>
+        <div class="duas-colunas">
+          <div class="colunamargem">
+            <img src="assets/img/website.svg" alt="website">
+          </div>
+          <div class="colunamargem">
+            <h3>Web Design</h3>
+            <p>Me responsabilizo em criar páginas, organizar layouts e selecionar tipografias e
+              cores. Nesta área, sou capaz de criar landing pages que são páginas únicas de divulgação de serviço ou produto, como no caso desta página que você está vendo agora. E também, sites corporativos, blogs e até lojas virtuais</p>
+          </div>
+        </div>
         <div class="linha"></div>
-        <h3>Frontend</h3>
-        <img src="assets/img/code.png" alt="code">
-        <p>Também sou desenvolvedor frontend que dá vida as interfaces criadas sempre buscando o maior nível de
-          fidelidade possível. </p>
+        <div class="duas-colunas">
+          <div class="colunamargem">
+            <img src="assets/img/code.png" alt="code">
+          </div>
+          <div class="colunamargem">
+            <h3>Interfaces Web para Cliente</h3>
+            <p>Também sou desenvolvedor frontend. O frontend é a parte gráfica que irá 
+              aparecer para o cliente, em outras palavras, foca na criação das telas.
+              Nesse sentido, sempre busco o maior nível de
+              fidelidade possível focando na interação e experiência do usuário. </p>
+          </div>
+        </div>
+        <div class="linha"></div>
+        <div class="duas-colunas">
+          <div class="colunamargem">
+            <img style="width: 200px;" src="assets/img/regranegocial.svg" alt="code">
+          </div>
+          <div class="colunamargem">
+            <h3>Programação da regra negocial</h3>
+            <p>Sou capaz também de programar a regra negocial de sites e sistemas web. Fazendo inclusões em bases de dados e criando funções úteis para seu negócio.</p>
+          </div>
+        </div>
+        <div class="linha"></div>
+        <div class="duas-colunas">
+          <div class="colunamargem">
+            <img style="width: 200px;" src="assets/img/aplicativo.svg" alt="code">
+          </div>
+          <div class="colunamargem">
+            <h3>Aplicativos</h3>
+            <p>Por fim, também consigo desenvolver aplicativos para seu negócio. Podendo ser para android ou IOS.</p>
+          </div>
+        </div>
+        
       </section>
-      <section id="portfolio">
+      <!-- <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="dropdown">
           <button class="dropbtn">Sites</button>
@@ -92,22 +142,24 @@
         <div class="container-portfolio">
           <p>Site Exemplo</p>
         </div>
-      </section>
+      </section> -->
     </article>
     <footer id="contato">
       <h2>Fale Comigo</h2>
-      <a href="https://api.whatsapp.com/send?phone=5561994007470&text=Quero%20fazer%20um%20or%C3%A7amento.">
+      <p class="paragrafbranco">Caso tenha interesse em alguns dos serviços citados acima, entre em contato comigo para fazermos um orçamento.</p>
+
+      <a href="https://api.whatsapp.com/send?phone=5561998747470&text=Quero%20fazer%20um%20or%C3%A7amento.">
         <button id="whatsapp" type="button" name="button">
           <img src="assets/img/whatsapp.svg" alt="whatsapp">WhatsApp
         </button>
       </a>
-      <a href="https://t.me/img/Mateus_de_Siqueira">
+      <!-- <a href="#">
         <button id="telegram" type="button" name="button">
           <img src="assets/img/telegram.svg" alt="telegram">Telegram
         </button>
-      </a>
-      <p>OU</p>
-      <form action="index.html" method="post">
+      </a> -->
+      <!-- <p>OU</p> -->
+      <!-- <form action="index.html" method="post">
         <fieldset>
           <label for="fname">Nome:</label><br>
           <input type="text" id="nome" name="fnome" placeholder="Digite aqui"><br>
@@ -130,7 +182,7 @@
           <textarea name="message" rows="10" cols="30" placeholder="Digite aqui:"></textarea><br>
         </fieldset>
         <input id="enviar" type="submit" value="Enviar">
-      </form>
+      </form> -->
       <div class="footer-container">
         <nav id="menu-footer">
           <h3>Menu</h3>
@@ -161,12 +213,10 @@
             <a href="https://pt-br.facebook.com/people/Mateus-De-Siqueira-Silva/100009665734178" target="_blank">
               <li><img src="assets/img/facebook.png" alt="facebook">Facebook</li>
             </a>
-            <a href="https://www.instagram.com/mateus_de_siqueira/" target="_blank">
+            <a href="https://www.instagram.com/siqueiradev/" target="_blank">
               <li><img src="assets/img/instagram.png" alt="instagram">Instagram</li>
             </a>
-            <a href="https://twitter.com/MSiqueiraSilva" target="_blank">
-              <li><img src="assets/img/twitter.png" alt="twitter">Twitter</li>
-            </a>
+            <li><img src="assets/img/twitter.png" alt="twitter">Twitter</li>
             <li><img src="assets/img/github.png" alt="github">Github</li>
           </ul>
         </nav>
@@ -174,15 +224,24 @@
       <ul id="nota-contato">
         <li>
           <img src="assets/img/telefone.png" alt="linkedin">Telefone para contato:<br>
-          (61) 994007470
+          (61) 998747470
         </li>
         <li>
           <img src="assets/img/email.png" alt="facebook">Email para contato:<br>
-          mateusiqueira.s@gmail.com
+          siqueiradesenvolvimento@gmail.com
         </li>
       </ul>
     </footer>
   </div>
+  <script>
+    function openNav() {
+      document.getElementById("menu").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("menu").style.width = "0";
+    }
+  </script>
 </body>
 
 </html>
