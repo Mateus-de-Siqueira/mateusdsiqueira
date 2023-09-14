@@ -145,9 +145,9 @@ h2 {
 #block {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content:center;
   height: 80%;
-  /* flex-direction: column; */
+  flex-direction: column;
 }
 
 #home {
@@ -609,6 +609,13 @@ h2 {
   margin: 50px;
 }
 
+/* .paragrafrodape {
+  padding: 0;
+  display: block;
+  text-align: left;
+  font-size: 1.2rem;
+} */
+
 @media only screen and (max-width: 600px) {
   .duas-colunas {
     display: block;
@@ -629,5 +636,17 @@ h2 {
 
   .textopreto {
     text-align: center;
+  }
+
+  #home #name {
+    /* display: block; */
+    width: 250px;
+    margin: 50px 50px;
+  }
+
+  #contato #nota-contato li {
+    display: block;
+    text-align: center;
+    margin: auto;
   }
 }
